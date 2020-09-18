@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
         bContinuar = findViewById(R.id.bContinuar);
 
         bContinuar.setOnClickListener(this);
-       //cargarDatos();
+
 
     }
 

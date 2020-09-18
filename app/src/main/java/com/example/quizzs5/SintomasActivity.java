@@ -61,6 +61,9 @@ public class SintomasActivity extends AppCompatActivity implements View.OnClickL
         switch (view.getId()) {
             case R.id.bFinalizar2:
 
+
+                //validarS();
+
                 if(cc1.isChecked()==false&&cc2.isChecked()==false&&cc3.isChecked()==false&&cc4.isChecked()==false&&cc5.isChecked()==false&&cc6.isChecked()==false&&cc7.isChecked()==false) {
                     Toast.makeText(this, "escoge una opción", Toast.LENGTH_SHORT).show();
                     return;

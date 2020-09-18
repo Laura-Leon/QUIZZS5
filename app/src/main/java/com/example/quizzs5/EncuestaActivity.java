@@ -48,14 +48,15 @@ public class EncuestaActivity extends AppCompatActivity implements View.OnClickL
        // String idss = preferences.getString("identifi","");
         //String registros = preferences.getString("registros","");
         String[] partes =noombres.split(":");
-        String[] puntaje =suumita.split(",");
+      String[] puntaje =suumita.split(",");
 
 
         textNombre.setText("");
         for (int i = 0; i<partes.length; i++) {
            todito = i;
 
-            textNombre.append(partes[todito] + ":" +puntaje[todito]+ "\n");
+           // textNombre.append(partes[todito] + ":" +puntaje[todito]+ "\n");
+            textNombre.append(partes[todito] + ":" +"puntaje[todito]"+ "\n");
 
             }
 
