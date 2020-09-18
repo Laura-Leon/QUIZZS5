@@ -84,6 +84,7 @@ public class SintomasActivity extends AppCompatActivity implements View.OnClickL
                     startActivity(y);
                     bFinalizar2.setBackgroundColor(Color.rgb(240, 24, 86));
                     finish();
+                Toast.makeText(getApplicationContext(),""+conta1,Toast.LENGTH_SHORT).show();
 
 
                 break;
@@ -165,56 +166,9 @@ public class SintomasActivity extends AppCompatActivity implements View.OnClickL
                 cc6.setChecked(false);
                 //sel+= "opción5\n";
                 break;
-        }
-        }
-/*
-    public void validarS() {
-        String selS = "seleccionado:\n";
-        if (cc1.isChecked()) {
-            checkeado2 = true;
-            conta1 = conta1 + 4;
-            selS += "opción1\n";
-        }
-        if (cc2.isChecked()) {
-            checkeado2 = true;
-            conta1 = conta1 + 4;
-            selS += "opción2\n";
-        }
-        if (cc3.isChecked()) {
-            checkeado2 = true;
-            conta1 = conta1 + 4;
-            selS += "opción3\n";
-        }
-        if (cc4.isChecked()) {
-            checkeado2 = true;
-            conta1 = conta1 + 4;
-            selS += "opción4\n";
-        }
-        if (cc5.isChecked()) {
-            checkeado2 = true;
-            conta1 = conta1 + 4;
-            selS += "opción5\n";
-        }
-        if (cc6.isChecked()) {
-            checkeado2 = true;
-            conta1 = conta1 + 4;
-            selS += "opción6\n";
-        }
-        if (cc7.isChecked()==true) {
-            cc1.setChecked(false);
-            cc2.setChecked(false);
-            cc3.setChecked(false);
-            cc4.setChecked(false);
-            cc5.setChecked(false);
-            cc6.setChecked(false);
-            ninguno2 = true;
 
-            checkeado2 = false;
-            conta1 = conta1 + 0;
-            selS += "opción7\n";
         }
-        /*
- */
+        }
 
        // Toast.makeText(getApplicationContext(), selS, Toast.LENGTH_SHORT).show();
         //Toast.makeText(getApplicationContext(),""+conta1,Toast.LENGTH_SHORT).show();
