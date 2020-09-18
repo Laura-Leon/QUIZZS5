@@ -42,7 +42,7 @@ public class NexoActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
-        //poner hilo aqui
+
 
         //validar();
         bContinuar2.setOnClickListener(this);
@@ -75,14 +75,14 @@ public class NexoActivity extends AppCompatActivity implements View.OnClickListe
                         startActivity(o);
                         bContinuar2.setBackgroundColor(Color.rgb(240, 24, 86));
                         Toast.makeText(getApplicationContext(),""+contador,Toast.LENGTH_SHORT).show();
-                        finish();
+
 
                     break;
 
             case R.id.c1:
                 c1.isChecked();
                 if (c1.isChecked()){
-                    //checkeado = true;
+
                     contador +=3;
                     //sel+= "opción1\n";
                 }else {contador -=3;}
@@ -91,7 +91,7 @@ public class NexoActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.c2:
                 c2.isChecked();
                 if (c2.isChecked()){
-                    //checkeado = true;
+
                     contador += 3;
                     //sel+= "opción2\n";
                 }else {contador -=3;}
@@ -101,7 +101,7 @@ public class NexoActivity extends AppCompatActivity implements View.OnClickListe
                 c3.isChecked();
 
                 if (c3.isChecked()){
-                    //checkeado =true;
+
                     contador += 3;
                     //sel+= "opción3\n";
                 }else {contador -=3;}
@@ -112,7 +112,7 @@ public class NexoActivity extends AppCompatActivity implements View.OnClickListe
                 c4.isChecked();
 
                 if (c4.isChecked()){
-                    //checkeado =true;
+
                     contador += 3;
                     //sel+= "opción4\n";
                 }else {contador -=3;}
@@ -124,8 +124,7 @@ public class NexoActivity extends AppCompatActivity implements View.OnClickListe
 
 
                 if (c5.isChecked()==true) {
-                    //checkeado = false;
-                    //ninguno = true;
+
                     contador += 0;
                 }
                 c1.setChecked(false);

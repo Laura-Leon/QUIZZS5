@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                 String ids = editIdenti.getText().toString();
 
                 SharedPreferences preferences = getSharedPreferences("datos", MODE_PRIVATE);
+
                 String nombreI = preferences.getString("numbres","");
                 String identiI = preferences.getString("identifi","");
 
@@ -54,12 +55,10 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
 
             if(nombres.trim().isEmpty()){
-
                 Toast.makeText(this,"escribe un nombre",Toast.LENGTH_SHORT).show();
                 return;
             }
             if(ids.trim().isEmpty()){
-
                     Toast.makeText(this,"escribe una identificación",Toast.LENGTH_SHORT).show();
                 return;
             }
@@ -77,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
                     Intent i = new Intent( this,NexoActivity.class);
                     bContinuar.setBackgroundColor(Color.rgb(240,24,86));
                     startActivity(i);
-                    finish();
+
 
                 }
                         break;

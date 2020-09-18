@@ -14,6 +14,7 @@ import android.widget.TextView;
 public class EncuestaActivity extends AppCompatActivity implements View.OnClickListener {
     private Button bRegistrar;
     private TextView textNombre;
+    private int todito;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,16 +41,21 @@ public class EncuestaActivity extends AppCompatActivity implements View.OnClickL
     }
     private void cargarDatos() {
         SharedPreferences preferences = getSharedPreferences("datos", Context.MODE_PRIVATE);
+        SharedPreferences prefer = getSharedPreferences("encuesta2", Context.MODE_PRIVATE);
+        String suumita = preferences.getString("sumita","");
+
         String noombres = preferences.getString("numbres","");
-        String idss = preferences.getString("identifi","");
+       // String idss = preferences.getString("identifi","");
         //String registros = preferences.getString("registros","");
         String[] partes =noombres.split(":");
+        String[] puntaje =suumita.split(",");
 
 
         textNombre.setText("");
         for (int i = 0; i<partes.length; i++) {
+           todito = i;
 
-            textNombre.append(partes[i] + ":" +"aqui deberian ir numeros"+ "\n");
+            textNombre.append(partes[todito] + ":" +puntaje[todito]+ "\n");
 
             }
 
